@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="weather__container">
+        <div class="weather">
+            <form action="submit" class="form__weather" id="form">
+                <input type="text" class="input__value" id="inputSearch" placeholder="Aktobe">
+                <label for="inputSearch"></label>
+    
+                <button class="btn__search" id="search" type="submit"></button>
+            </form>
+    
+            <div class="weather__content">
+                <div class="current__weather__info">
+                    <div class="city__wrapper">
+                        <div class="cityTitle" id="city">Aktobe</div>
+                        <button class="add__city" id="addCity"></button>
+                    </div>
+
+                    <div class="weather__temperature__wrapper">
+                        <div class="weather__temperature" id="temperature">14</div>
+                        <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="cloud" class="weather__icon" id="icon">
+                    </div>
+
+                    <div class="weather__data">
+                        <div class="feels__like">Feels like: 10</div>
+                        <div class="sunrise">Sunrise: 03:21</div>
+                        <div class="sunset">Sunset: 18:54</div>
+                    </div>
+
+                    <ul class="time__temperature__list">
+                        <li class="time__temperature__item">
+                            <div class="time">12:00</div>
+                            <div class="temperature" id="temp12">Temperature: 13</div>
+                            <div class="time__feels__like" id="feels12">Feels like: 11</div>
+                        </li>
+
+                        <li class="time__temperature__item">
+                            <div class="time">15:00</div>
+                            <div class="temperature" id="temp15">Temperature: 11</div>
+                            <div class="time__feels__like" id="feels15">Feels like: 10</div>
+                        </li>
+
+                        <li class="time__temperature__item">
+                            <div class="time">18:00</div>
+                            <div class="temperature" id="temp18">Temperature: 11</div>
+                            <div class="time__feels__like" id="feels18">Feels like: 10</div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="location__storage">
+                    <h3 class="name__storage">Added Locations:</h3>
+    
+                    <ul class="list__city" id="list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+    
+</body>
+</html>

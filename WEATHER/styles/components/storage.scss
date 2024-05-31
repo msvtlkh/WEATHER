@@ -1,0 +1,40 @@
+.location__storage {
+    width: 50%;
+    border-left: 1px solid black;
+}
+
+.name__storage {
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.list__city {
+    border-top: 1px solid black;
+    padding-left: 10px;
+    padding-top: 25px;
+    overflow: auto;
+    height: 157px;
+}
+
+
+.city {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    height: 25px;
+}
+
+.cityName {
+    margin-right: 10px;
+}
+
+.delete__btn {
+    height: 20px;
+    width: 20px;
+    background: url('/ПОГОДА/images/close-icon.svg') no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}

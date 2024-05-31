@@ -1,0 +1,99 @@
+.weather__content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid black;
+    border-top: transparent;
+
+    height: 75%;
+}
+
+.current__weather__info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 10px;
+
+    width: 50%;
+}
+
+.weather__temperature {
+    font-size: 55px;
+}
+
+.weather__icon {
+    align-self: center;
+    height: 70px;
+}
+
+.city__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.cityTitle {
+    font-size: 22px;
+}
+
+.add__city {
+    position: relative;
+    border: none;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    background-color: transparent;
+
+    &::after {
+        content: url('/ПОГОДА/images/like.svg');
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+}
+
+.add__city.clicked::after {
+    content: url('/ПОГОДА/images/clicked.svg');
+}
+
+.weather__temperature__wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.feels__like {
+    margin-bottom: 5px;
+}
+
+.sunrise {
+    margin-bottom: 5px;
+}
+
+.weather__data {
+    font-size: 17px;
+}
+
+.time__temperature__list {
+    font-size: 14px;
+}
+
+.time__temperature__item {
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+}
+
+.time {
+    margin-bottom: 10px;
+}
+
+.time__temperature__item {
+    margin-bottom: 5px;
+
+    &:last-child {
+        border: none;
+    }
+}

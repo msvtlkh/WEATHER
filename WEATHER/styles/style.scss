@@ -1,0 +1,44 @@
+ul, li {
+    margin-left: 0;
+    padding-left: 0;
+
+    list-style: none;
+}
+
+.weather__container {
+    //background-color: #18181a;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    background-color: white;
+    //border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    //box-shadow: 20px 15px 11px#b4b4b4;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    
+    width: 500px;
+    height: 600px;
+}
+
+//norm
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+//components
+@import "components/input.scss";
+@import "components/current_weather.scss";
+@import "components/storage.scss";
